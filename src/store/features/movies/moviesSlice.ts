@@ -1,6 +1,6 @@
 import { createSlice, PayloadAction, createAsyncThunk } from '@reduxjs/toolkit';
-import { AppDispatch } from '../store';
-import { RootState } from '../store';
+import { AppDispatch } from '../../store';
+import { RootState } from '../../store';
 
 interface Movie {
   id: number;
@@ -90,3 +90,5 @@ const moviesSlice = createSlice({
 
 export const moviesActions = moviesSlice.actions;
 export default moviesSlice.reducer;
+
+

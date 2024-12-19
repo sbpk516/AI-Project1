@@ -14,6 +14,18 @@ const LeftNav: React.FC = () => {
         <li>
           <Link href="/">Home</Link>
         </li>
+        <li>
+          <Link href="/">Favorite Movies</Link>
+        </li>
+        <li>
+          <Link href="/">Favorite TV Shows</Link>
+        </li>
+        <li>
+          <Link href="/">Favorite Personalities</Link>
+        </li>
+        <li>
+          <Link href="/">Favorite Hobbies</Link>
+        </li>
         {/* Add more links later */}
       </ul>
     </NavWrapper>

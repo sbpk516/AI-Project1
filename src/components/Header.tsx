@@ -8,7 +8,7 @@ const HeaderWrapper = styled.header`
 const Header: React.FC = () => {
     return (
         <HeaderWrapper>
-            <h1>Favorite Movies</h1>
+            <h1>Favorites</h1>
         </HeaderWrapper>
     );
 };

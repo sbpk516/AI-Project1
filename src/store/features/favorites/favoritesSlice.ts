@@ -1,5 +1,5 @@
 import { createSlice, PayloadAction } from '@reduxjs/toolkit';
-import { RootState } from '../store';
+import { RootState } from '../../store';
 
 interface FavoritesState {
   list: number[]; // Array of movie IDs
