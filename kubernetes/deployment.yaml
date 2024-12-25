@@ -1,0 +1,26 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: favorite-movies-frontend
+spec:
+  replicas: 2 # Start with 2 pods (adjust as needed)
+  selector:
+    matchLabels:
+      app: favorite-movies-frontend
+  template:
+    metadata:
+      labels:
+        app: favorite-movies-frontend
+    spec:
+      containers:
+        - name: frontend
+          image: 793948481411.dkr.ecr.us-east-2.amazonaws.com/sbpk516/favorite-movies-frontend:latest # Replace with your ECR image URI
+          ports:
+            - containerPort: 3000
+          resources:
+            requests:
+              cpu: 100m # Adjust based on your needs
+              memory: 256Mi # Adjust based on your needs
+            limits:
+              cpu: 500m # Adjust based on your needs
+              memory: 512Mi # Adjust based on your needs
