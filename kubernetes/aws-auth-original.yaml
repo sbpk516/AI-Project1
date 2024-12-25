@@ -1,0 +1,20 @@
+apiVersion: v1
+data:
+  mapRoles: |
+    - groups:
+      - system:bootstrappers
+      - system:nodes
+      rolearn: arn:aws:iam::793948481411:role/eksctl-favorite-movies-cluster-nod-NodeInstanceRole-xGdtq0EUliZM
+      username: system:node:{{EC2PrivateDNSName}}
+  mapUsers: |
+    - userarn: arn:aws:iam::793948481411:user/balajisachidanandam
+      username: balajisachidanandam
+      groups:
+        - system:masters
+kind: ConfigMap
+metadata:
+  creationTimestamp: "2024-12-24T15:06:26Z"
+  name: aws-auth
+  namespace: kube-system
+  resourceVersion: "1452"
+  uid: 30ae69cb-6c93-4d9e-a8fb-67562699e93e
