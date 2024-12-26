@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: frontend
-          image: 793948481411.dkr.ecr.us-east-2.amazonaws.com/sbpk516/favorite-movies-frontend:latest # Replace with your ECR image URI
+          image: 793948481411.dkr.ecr.us-east-2.amazonaws.com/sbpk516/favorite-movies-frontend:latest-amd64 # Replace with your ECR image URI
           ports:
             - containerPort: 3000
           resources:
